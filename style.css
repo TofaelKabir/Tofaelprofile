@@ -10,7 +10,7 @@ Author:Tanim
 5. Button
 6. About Us Area
 7. Section Title
-8. Our Services
+8. Skills
 9. Resume Area
 10. Portfolio Area
 11. Client Review Area
@@ -25,11 +25,11 @@ body{
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
-	color: #ccc;
+	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-weight: normal;
 	font-style: normal;
-	background: #b1badb;
+	background: #b6b8dd;
 }
 a,
 button {
@@ -68,6 +68,7 @@ ul{
 	list-style: none;
 }
 a{
+	color: rgb(77, 47, 47);
 	text-decoration: none;
 }
 a:hover{
@@ -86,7 +87,7 @@ button:focus{
 	outline: none;
 }
 .section-bg{
-	background: #312f2f;
+	background: #0e102e; /* background for about me */
 }
 /*
  * 2. Back To Top
@@ -116,7 +117,7 @@ button:focus{
 .header {
 	padding: 20px 0px;
 	/* background: #333; */
-	background: #0e102e;
+	background: #0e102e;  /* background color for header */
 }
 .header.sticky {
 	position: fixed;
@@ -301,17 +302,19 @@ button:focus{
 .hero-caption-full h2 {
 	font-size: 30px;
 	font-weight: 700;
-	color: #fff;
+	color: #0e102e;
 	margin-bottom: 20px;
 }
 .hero-caption-full h2 span{
-	/* color: #ffbd39; */
-	color: #f7e0b3;
+	/* color: #f8bf4e; */
+	/* color: rgb(226, 148, 148); */
+	color: white;
+	/* color: #f7e0b3; */
 }
 .hero-caption-full p {
 	font-size: 18px;
 	line-height: 30px;
-	color: #fff;
+	color:#0e102e;
 }
 /*
  * 5. Button
@@ -398,7 +401,7 @@ button:focus{
 	height: 562.5px;
 }
 .hero-caption-btn a.button-2 {
-	margin-left: 20px;
+	/* margin-left: 20px; */
 }
 /*
  * 6. About Us Area
@@ -425,6 +428,7 @@ button:focus{
 .about-info p {
 	margin-bottom: 12px;
 	line-height: 24px;
+	text-align: justify;
 }
 .about-social span {
 	float: left;
@@ -460,27 +464,64 @@ button:focus{
 	background: #1b7599;
 }
 .counter-box {
+  width: 250px;
+  height: 136px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  padding: 30px 20px;
+  background: #b6b8dd;
+  color:  #0e102e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* below one was the previous one */
+/* .counter-box {
+	width: 180px;
+	height: 40px;
 	text-align: center;
 	margin-bottom: 30px;
 	border-radius: 3px;
 	padding: 30px 20px;
 	background: #3e3c3c;
-}
+} */
 .counter-box h2.counter {
 	font-size: 40px;
 	font-weight: 700;
 	margin-bottom: 10px;
-	color: #fff;
+	color: #0e102e;
 }
 /*
- * 7. Section Title
+ * 7. Technical skill Title
 */
 .section-headding h2 {
 	font-size: 30px;
 	font-weight: 700;
 	letter-spacing: 2px;
 	margin-bottom: 15px;
+	float: left;
 }
+
+.section-headding h6 {
+	float: left;
+}
+
+.skills-headding h2 {
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-bottom: 15px;
+	float: left;
+}
+
+/* #skills-header{
+	color: #0e102e;
+	
+} */
+
+
+
 .title-divider {
 	width: 150px;
 	height: 2px;
@@ -506,23 +547,23 @@ button:focus{
 	border: 3px solid #ffbd39
 }
 /*
- * 8. Our Services
+ * 8. Skills
 */
-.services-box {
+.skills-box {
 	width: 100%;
 	height: 100%;
-	text-align: center;
 	padding: 40px 26px;
-	/* background: #312f2f; */
-	background: #0e102e;
+	background: #b6b8dd;
 	border-radius: 6px;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
+	text-align: center;
+	color: #0e102e;
 }
-.services-box:hover{
+.skills-box:hover{
 	transform: translateY(-10px);
 }
-.services-box .icon {
+.skills-box .icon {
 	background: #ffbd39;
 	width: 90px;
 	height: 90px;
@@ -535,51 +576,140 @@ button:focus{
 	color: #fff;
 	border-radius: 33% 66% 70% 30%/49% 62% 38% 51% !important;
 }
-.services-box h2 {
+.skills-box h2 {
 	font-size: 22px;
 	margin-bottom: 10px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #fff;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
+	text-align: center;
 }
-.services-box:hover h2{
+.skills-box:hover h2{
 	color: #ffbd39;
 }
 /*
- * 9. Resume Area
+ * 9. Experience
 */
-.resume-item-box {
+.experience-item-box {
 	width: 100%;
-	height: 350px; /*compear to the bigest one*/
+	height: 285px; /*compear to the bigest one*/
 	overflow: auto; /* eta auto scroll*/
 	padding: 30px 20px;
 	text-align: left;
 	box-shadow: 0px 2px 5px #4d4b4b;
 }
-.resume-item-box span {
+.experience-item-box span {
 	background: #ffbd39;
-	color: #fff;
+	color: white;
 	font-weight: 700;
 	font-size: 14px;
 	padding: 2px 14px;
 	display: inline-block;
 	border-radius: 20px;
 }
-.resume-item-box h2 {
+.experience-item-box h2 {
 	font-size: 22px;
 	font-weight: 700;
-	color: #fff;
+	color:#b6b8dd;
 	margin-top: 12px;
 	margin-bottom: 2px;
 }
-.resume-item-box h4 {
+.experience-item-box h4 {
 	font-size: 14px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	margin-bottom: 20px;
-	color: #ccc;
+	color: #b6b8dd;
 }
+
+.education-item-box {
+	width: 100%;
+	height: 200px; /*compear to the bigest one*/
+	overflow: auto; /* eta auto scroll*/
+	padding: 30px 20px;
+	text-align: left;
+	box-shadow: 0px 2px 5px #4d4b4b;
+	border-radius: 6px;
+}
+
+.education-item-box span {
+	background: #ffbd39;
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 2px 14px;
+	display: inline-block;
+	border-radius: 20px;
+}
+.education-item-box h2 {
+	font-size: 22px;
+	font-weight: 700;
+	color: #b6b8dd;
+	margin-top: 12px;
+	margin-bottom: 2px;
+}
+.education-item-box h4 {
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	color: #b6b8dd;
+}
+
+#experience{
+	background-color: #b6b8dd;
+}
+
+#skills{
+	background-color:#0e102e;
+}
+
+#education{
+	background-color: #b6b8dd;
+}
+
+#experience-header{
+	color: #0e102e;
+	float: left;
+}
+
+
+#experience-header h2{
+	float: left;
+}
+
+#skills-header h2{
+	color: white;
+	float: left;
+}
+
+#experience-item-box{
+	background-color: #0e102e;
+	color: white;
+	text-align: justify;
+	border-radius: 6px;
+}
+
+#education-item-box{
+	background-color:#0e102e;
+	color: white;
+	text-align: justify;
+}
+
+#education-item-box h2{
+	color: white;
+}
+
+#education-item-box h4{
+	color: white;
+}
+
+#education-header h2{
+	color: #0e102e;
+	float: left;
+}
+
 /*
  * 10. Portfolio Area
 */
@@ -910,12 +1040,12 @@ button:focus{
 	color: #fff;
 }
 .footer-widget-single p {
-	color: #ccc;
+	color:#3c4133;
 }
 .footer-widget-single h3 {
 	font-size: 18px;
 	font-weight: bold;
-	color: #fff;
+	color:#0e102e;
 	text-transform: uppercase;
 	position: relative;
 	padding-bottom: 12px;
@@ -949,14 +1079,14 @@ button:focus{
 	line-height: 32px;
 }
 .footer-widget-single ul li a {
-	color: #ccc;
+	color: #0e102e;
 	text-transform: capitalize;
 }
 .footer-widget-single ul li a:hover {
-	color: #fff;
+	color: #0e102e;
 }
 .footer-widget-single strong {
-	color: #fff;
+	color: #0e102e;
 }
 .footer-widget-single ul.social-link {
 	margin-top: 15px;
